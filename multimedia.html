@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Video YouTube dan MP4</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        video, audio, iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Dashboard Video MP4 dan MP3</h1>
+        </header>
+
+        <section>
+            <h2>Video MP4 Player</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Browser Anda tidak mendukung format video ini.
+            </video>
+
+            <h2>Iframe Video YouTube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wQML0uPREPc?si=S3Ewjq88P48DkHYm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2>Audio Player</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Browser Anda tidak mendukung format audio ini.
+            </audio>
+        </section>
+    </section>
+</body>
+</html>
